@@ -1,0 +1,19 @@
+body{
+  background-color: rgb(225, 245, 254);
+}
+header.row{
+  background-color: rgb(3, 169, 244);
+  height:300px;
+}
+.container{
+  padding:75px;
+  background-color: white;
+  position:relative;
+  top:-100px;
+}
+
+@media screen and (min-width: 720px) {
+  .container{
+    width:60%;
+  }
+}
