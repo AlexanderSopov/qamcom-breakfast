@@ -6,14 +6,33 @@ header.row{
   height:300px;
 }
 .container{
-  padding:75px;
+  padding:0px;
   background-color: white;
   position:relative;
   top:-100px;
 }
+.container .row,
+.sectionHeader h3{
+    padding-left:75px;
+    padding-right:75px;
+}
 
+.sectionHeader h3{
+    padding-right:15px;
+    background-color: rgb(3, 169, 244);
+    display: inline;
+}
+.sectionHeader{
+
+  margin-top:45px;
+  margin-bottom:25px;
+}
 @media screen and (min-width: 720px) {
   .container{
     width:60%;
+  }
+  .img-responsive{
+    margin-top:75px;
+    width:100%;
   }
 }
