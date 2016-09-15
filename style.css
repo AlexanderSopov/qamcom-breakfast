@@ -49,8 +49,8 @@ p{
   margin-bottom: 15px;
 }
 a.register{
-  background-color: rgb(3, 169, 244);
-  color: black;
+  background-color: #4285f4;
+  color: white;
   margin-right:25px;
   padding:10px 30px;
   display:inline-block;
@@ -76,7 +76,7 @@ a.register:hover{
   padding:0px;
   background-color: white;
   position:relative;
-  top:200px;
+  top:125px;
 }
 .container .row,
 .sectionHeader h3{
@@ -111,7 +111,7 @@ td{
 }
 table{
   margin-top: 10px;
-  margin-bottom:20px;
+  margin-bottom: 40px;
 }
 
 
