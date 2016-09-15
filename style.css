@@ -1,6 +1,19 @@
+
+/*
+ *    BG & META
+ */
+*{
+  font-family: "Raleway", sans-serif;
+}
 body{
+  margin:0px;
+  padding:0px;
   background-color: rgb(225, 245, 254);
   width:100%;
+  z-index: 0;
+}
+body section{
+  z-index: 1;
 }
 header.row{
   position:fixed;
@@ -11,17 +24,52 @@ header.row{
   width:100%;
   background-color: rgb(3, 169, 244);
   height:300px;
-  z-index: -2;
+  z-index: 2;
 }
+
+
+/*
+ *    Header and Intro
+ */
+
 .img-responsive{
   margin-top:25px;
   padding-left: 17px;
-  padding-right:17px;
-  width:100%;
+  padding-right: 17px;
+  float: right;
 }
+
+h1{
+  font-size: 3em;
+}
+p{
+  font-size: 1.2em;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+a.register{
+  background-color: rgb(3, 169, 244);
+  color: black;
+  margin-right:25px;
+  padding:10px 30px;
+  display:inline-block;
+  width: auto;
+  cursor: pointer;
+}
+a.register:hover{
+  background-color:rgb(225, 245, 254);
+  text-decoration: none;
+}
+
+
+
+/*
+ *    BODY
+ */
 .container{
   width: 90%;
-  z-index: -2;
+  z-index: 3;
   -webkit-box-shadow: 0px 1px 3px 1px rgba(133,133,133,0.75);
   -moz-box-shadow: 0px 1px 3px 1px rgba(133,133,133,0.75);
   box-shadow: 0px 1px 3px 1px rgba(133,133,133,0.75);
@@ -35,27 +83,53 @@ header.row{
     padding-left:25px;
     padding-right:25px;
 }
-
 .sectionHeader h3{
+    font-weight: 700;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right:50px;
     display: inline;
-    z-index: 1;
+    z-index: 5;
 }
 .sectionHeader .shape{
   border-top: 50px solid rgb(3, 169, 244);
-  border-right: 50px solid transparent;
-  width: 200px;
+  border-right: 25px solid transparent;
+  width: 180px;
   position: relative;
   top: -40px;
   z-index: -1;
 }
 .sectionHeader{
-  margin-top:45px;
-  margin-bottom:35px;
+  margin-top:75px;
+  margin-bottom:-25px;
 }
+
+td{
+  padding:5px 20px;
+  padding-left: 0px;
+  font-size: 1.3em;border-bottom: 1px solid #ddd;
+}
+table{
+  margin-top: 10px;
+  margin-bottom:20px;
+}
+
+
+
+/*
+ *    SCREEN SETTINGS
+ */
 @media screen and (min-width: 720px) {
+  h1{
+    font-size: 4em;
+  }
+
+  p, td{
+    font-size: 1.5em;
+  }
+  .img-responsive{
+    width:350px;
+  }
   .container{
     width:60%;
   }
@@ -69,7 +143,8 @@ header.row{
       padding-right:75px;
   }
   .sectionHeader .shape{
-    width: 240px;
+    width: 225px;
   }
+
 
 }
