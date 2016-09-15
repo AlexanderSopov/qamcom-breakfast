@@ -33,6 +33,7 @@ header.row{
  */
 
 .img-responsive{
+  margin-bottom: 25px;
   margin-top:25px;
   padding-left: 17px;
   padding-right: 17px;
@@ -58,7 +59,6 @@ a.register{
   cursor: pointer;
 }
 a.register:hover{
-  background-color:rgb(225, 245, 254);
   text-decoration: none;
 }
 
@@ -128,6 +128,7 @@ table{
     font-size: 1.5em;
   }
   .img-responsive{
+    margin-bottom: 40px;
     width:350px;
   }
   .container{
