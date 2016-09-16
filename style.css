@@ -32,7 +32,7 @@ header.row{
  *    Header and Intro
  */
 
-.img-responsive{
+#logo{
   margin-bottom: 25px;
   margin-top:25px;
   padding-left: 17px;
@@ -86,15 +86,15 @@ a.register.last{
  *    BODY
  */
 .container{
-  width: 90%;
-  z-index: 3;
-  -webkit-box-shadow: 0px 1px 3px 1px rgba(133,133,133,0.75);
-  -moz-box-shadow: 0px 1px 3px 1px rgba(133,133,133,0.75);
-  box-shadow: 0px 1px 3px 1px rgba(133,133,133,0.75);
-  padding:0px;
-  background-color: white;
-  position:relative;
-  top:100px;
+    width: 90%;
+    z-index: 3;
+    -webkit-box-shadow: 0px 1px 3px 1px rgba(133,133,133,0.75);
+    -moz-box-shadow: 0px 1px 3px 1px rgba(133,133,133,0.75);
+    box-shadow: 0px 1px 3px 1px rgba(133,133,133,0.75);
+    padding:0px;
+    background-color: white;
+    position:relative;
+    top:100px;
 }
 .container .row,
 .sectionHeader h3{
@@ -110,12 +110,12 @@ a.register.last{
     z-index: 5;
 }
 .sectionHeader .shape{
-  border-top: 50px solid rgb(3, 169, 244);
-  border-right: 25px solid transparent;
-  width: 180px;
-  position: relative;
-  top: -40px;
-  z-index: -1;
+    border-top: 50px solid rgb(3, 169, 244);
+    border-right: 25px solid transparent;
+    width: 180px;
+    position: relative;
+    top: -40px;
+    z-index: -1;
 }
 .sectionHeader{
   margin-top:75px;
@@ -132,47 +132,49 @@ table{
   margin-bottom: 40px;
 }
 
-
-
+#profile-pic{
+  width:30%;
+  float: right;
+  margin: 25px 0 20px 20px;
+}
 
 /*
  *    SCREEN SETTINGS
  */
- @media screen and (min-width: 720px) {
-   h1{
-     font-size: 3em;
-   }
+@media screen and (min-width: 720px) {
+  h1{
+    font-size: 3em;
+  }
 
-   p, td{
-     font-size: 1em;
-   }
-   .img-responsive{
-     margin-top: 50px;
-     margin-bottom: 30px;
-     width:200px;
-     padding: 10px;
-   }
-   .container{
-     width:70%;
-   }
-   .container .row,
-   .sectionHeader h3{
-       padding-left:75px;
-       padding-right:75px;
-   }
-   .sectionHeader .shape{
-     width: 225px;
-   }
- }
- @media screen and (min-width: 1080px) {
-   .container{
-     width:50%;
-   }
-   h1{
-     font-size: 3em;
-   }
-
-   p, td{
-     font-size: 1em;
-   }
- }
+  p, td{
+    font-size: 1em;
+  }
+  #logo{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width:200px;
+    padding: 10px;
+  }
+  .container{
+    width:70%;
+  }
+  .container .row,
+  .sectionHeader h3{
+    padding-left:75px;
+    padding-right:75px;
+  }
+  .sectionHeader .shape{
+    width: 225px;
+  }
+  }
+  @media screen and (min-width: 1080px) {
+  .container{
+    width:50%;
+  }
+  h1{
+    font-size: 3em;
+  }
+  p, td{
+    font-size: 1em;
+  }
+}
