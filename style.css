@@ -43,14 +43,20 @@ header.row{
 h1{
   font-size: 3em;
 }
+p, td{
+  font-size: 1em;
+}
 p{
-  font-size: 1.2em;
   text-align: justify;
   margin-top: 20px;
   margin-bottom: 15px;
 }
 a.register{
+  text-decoration: none;
   background-color: #4285f4;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(66,133,244,0.36);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(66,133,244,0.36);
+  box-shadow: 3px 3px 5px 0px rgba(66,133,244,0.36);
   color: white;
   margin-right:25px;
   padding:10px 30px;
@@ -60,6 +66,12 @@ a.register{
 }
 a.register:hover{
   text-decoration: none;
+}
+a.register:active{
+  transform: translate(3px,3px);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 
@@ -76,7 +88,7 @@ a.register:hover{
   padding:0px;
   background-color: white;
   position:relative;
-  top:125px;
+  top:100px;
 }
 .container .row,
 .sectionHeader h3{
@@ -107,45 +119,58 @@ a.register:hover{
 td{
   padding:5px 20px;
   padding-left: 0px;
-  font-size: 1.3em;border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 table{
   margin-top: 10px;
   margin-bottom: 40px;
 }
 
+.register.last{
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
 
 
 /*
  *    SCREEN SETTINGS
  */
-@media screen and (min-width: 720px) {
-  h1{
-    font-size: 4em;
-  }
+ @media screen and (min-width: 720px) {
+   h1{
+     font-size: 3.2em;
+   }
 
-  p, td{
-    font-size: 1.5em;
-  }
-  .img-responsive{
-    margin-bottom: 40px;
-    width:350px;
-  }
-  .container{
-    width:60%;
-  }
-  .img-responsive{
-    margin-top:75px;
-    padding: 10px;
-  }
-  .container .row,
-  .sectionHeader h3{
-      padding-left:75px;
-      padding-right:75px;
-  }
-  .sectionHeader .shape{
-    width: 225px;
-  }
+   p, td{
+     font-size: 1.1em;
+   }
+   .img-responsive{
+     margin-bottom: 30px;
+     width:200px;
+     padding: 10px;
+     position:relative;
+     left: 40px;
+   }
+   .container{
+     width:70%;
+   }
+   .container .row,
+   .sectionHeader h3{
+       padding-left:75px;
+       padding-right:75px;
+   }
+   .sectionHeader .shape{
+     width: 225px;
+   }
+ }
+ @media screen and (min-width: 1080px) {
+   .container{
+     width:50%;
+   }
+   h1{
+     font-size: 3.5em;
+   }
 
-
-}
+   p, td{
+     font-size: 1.2em;
+   }
+ }
