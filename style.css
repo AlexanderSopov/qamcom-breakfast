@@ -137,11 +137,11 @@ table{
  */
  @media screen and (min-width: 720px) {
    h1{
-     font-size: 3.2em;
+     font-size: 3em;
    }
 
    p, td{
-     font-size: 1.1em;
+     font-size: 1em;
    }
    .img-responsive{
      margin-bottom: 30px;
@@ -165,10 +165,10 @@ table{
      width:50%;
    }
    h1{
-     font-size: 3.5em;
+     font-size: 3em;
    }
 
    p, td{
-     font-size: 1.2em;
+     font-size: 1em;
    }
  }
